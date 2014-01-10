@@ -1,11 +1,20 @@
 alias ll="ls -lah"
 alias rm="rm -i"
 alias cp="cp -i"
-alias ls="ls -FG"
 alias l="ls -ail"
 alias vi="vim"
 
-# alias cvs="cvs -z3"
+case `uname` in
+        Darwin)
+                alias ls='ls -FG'
+        ;;
+        FreeBSD)
+                alias ls='ls -FG'
+        ;;
+        Linux)
+                alias ls='ls -F --color=auto'
+        ;;
+esac
 
 # do a du -hs on each dir on current path
 alias lsdir="for dir in *;do;if [ -d \$dir ];then;du -hsL \$dir;fi;done"
