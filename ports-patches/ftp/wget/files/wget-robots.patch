@@ -1,0 +1,13 @@
+--- src/res.c.orig      2014-07-26 21:53:33.000000000 +0200
++++ src/res.c   2014-07-26 21:53:18.000000000 +0200
+@@ -562,8 +562,9 @@
+     }
+   else
+     {
+-      err = retrieve_url (url_parsed, robots_url, file, NULL, NULL, NULL,
+-                          false, i, false);
++/*      err = retrieve_url (url_parsed, robots_url, file, NULL, NULL, NULL,
++                          false, i, false); */
++      err = URLERROR; /* moahaha */
+       url_free(url_parsed);
+     }
