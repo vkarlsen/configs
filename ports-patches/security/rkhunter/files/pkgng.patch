@@ -1,7 +1,6 @@
-diff -ur files_old/README files/README
---- files_old/README    2015-01-21 22:42:42.000000000 +0100
-+++ files/README    2015-02-01 14:07:45.000000000 +0100
-@@ -427,9 +427,10 @@
+--- files/README.orig   2014-01-25 22:29:50.000000000 +0100
++++ files/README    2016-09-16 21:49:18.032476000 +0200
+@@ -430,9 +430,10 @@
  system.
 
  The currently available package managers are 'RPM' for RedHat/RPM-based
@@ -15,65 +14,9 @@ diff -ur files_old/README files/README
 
  Any file which is not part of a package is treated as before, that is,
  the HASH_CMD configuration file option, or the '--hash' command-line
-diff -ur files_old/i18n/cn files/i18n/cn
---- files_old/i18n/cn   2009-09-16 01:28:16.000000000 +0200
-+++ files/i18n/cn   2015-02-01 13:36:00.000000000 +0100
-@@ -101,6 +101,7 @@
-
- HASH_PKGMGR:使用包管理器 '$1' 检查文件属性
- HASH_PKGMGR_MD5:使用 MD5 hash 函数命令 '$1' 辅助包管理器的验证
-+HASH_PKGMGR_SHA256:使用 SHA256 hash 函数命令 '$1' 辅助包管理器的验证
- HASH_PKGMGR_NOT_SPEC:没有指定包管理器: 使用 hash 函数 '$1'
- HASH_PKGMGR_NOT_SPEC_PRELINKED:没有指定包管理器: 使用带 '$1' 的 prelink 命令
-
-diff -ur files_old/i18n/de files/i18n/de
---- files_old/i18n/de   2014-01-03 22:42:22.000000000 +0100
-+++ files/i18n/de   2015-02-01 13:34:26.000000000 +0100
-@@ -102,6 +102,7 @@
-
- HASH_PKGMGR:Verwende den Paketmanager '$1' für die Überprüfung der Dateieigenschaften
- HASH_PKGMGR_MD5:Verwende MD5 Hash-Funktion mit dem Kommando '$1' zur Unterstützung der Paketmanager-Überprüfung
-+HASH_PKGMGR_SHA256:Verwende SHA256 Hash-Funktion mit dem Kommando '$1' zur Unterstützung der Paketmanager-Überprüfung
- HASH_PKGMGR_NOT_SPEC:Kein Paketmanager koniguriert: verwende die Hash-Funktion '$1'
- HASH_PKGMGR_NOT_SPEC_PRELINKED:Kein Paketmanager konfiguriert: verwende das prelink-Kommando mit '$1'
-
-diff -ur files_old/i18n/en files/i18n/en
---- files_old/i18n/en   2014-08-25 01:05:03.000000000 +0200
-+++ files/i18n/en   2015-02-01 13:34:26.000000000 +0100
-@@ -108,6 +108,7 @@
-
- HASH_PKGMGR:Using package manager '$1' for file property checks
- HASH_PKGMGR_MD5:Using MD5 hash function command '$1' to assist package manager verification
-+HASH_PKGMGR_SHA256:Using SHA256 hash function command '$1' to assist package manager verification
- HASH_PKGMGR_SUM:Using the stored 16-bit checksum for package verification
- HASH_PKGMGR_NOT_SPEC:No package manager specified: using hash function '$1'
- HASH_PKGMGR_NOT_SPEC_PRELINKED:No package manager specified: using prelink command with '$1'
-diff -ur files_old/i18n/tr.utf8 files/i18n/tr.utf8
---- files_old/i18n/tr.utf8  2014-03-12 21:54:55.000000000 +0100
-+++ files/i18n/tr.utf8  2015-02-01 13:36:00.000000000 +0100
-@@ -108,6 +108,7 @@
-
- HASH_PKGMGR:Dosya özellikleri kontrolü için '$1' paket yöneticisi kullanılıyor
- HASH_PKGMGR_MD5:Paket yöneticisi doğrulamasına yardımcı olması için MD5 sağlama fonksiyonu komutu '$1' kullanılıyor
-+HASH_PKGMGR_SHA256:Paket yöneticisi doğrulamasına yardımcı olması için SHA256 sağlama fonksiyonu komutu '$1' kullanılıyor
- HASH_PKGMGR_SUM:Paket doğrulaması için depolanan 16-bit sağlama kullanılıyor
- HASH_PKGMGR_NOT_SPEC:Paket yöneticisi belirtilmedi: '$1' sağlama fonksiyonu kullanılıyor
- HASH_PKGMGR_NOT_SPEC_PRELINKED:Paket yöneticisi belirtilmedi: '$1' ile prelink komutu kullanılıyor
-diff -ur files_old/i18n/zh.utf8 files/i18n/zh.utf8
---- files_old/i18n/zh.utf8  2009-09-16 01:28:16.000000000 +0200
-+++ files/i18n/zh.utf8  2015-02-01 13:36:00.000000000 +0100
-@@ -99,6 +99,7 @@
-
- HASH_PKGMGR:使用套件管理程式 '$1' 檢查檔案屬性
- HASH_PKGMGR_MD5:使用 MD5 hash 函數命令 '$1' 幫助套件管理程式進行驗證
-+HASH_PKGMGR_SHA256:使用 SHA256 hash 函數命令 '$1' 幫助套件管理程式進行驗證
- HASH_PKGMGR_NOT_SPEC:沒有指定套件管理程式: 使用 hash 函數 '$1'
- HASH_PKGMGR_NOT_SPEC_PRELINKED:沒有指定套件管理程式: 使用帶 '$1' 的 prelink 命令
- HASH_PKGMGR_USE_VRFY:套件管理程式驗證將用於檔案屬性的檢查結果
-diff -ur files_old/rkhunter files/rkhunter
---- files_old/rkhunter  2015-01-22 02:16:40.000000000 +0100
-+++ files/rkhunter  2015-02-01 14:01:53.000000000 +0100
-@@ -4711,6 +4711,32 @@
+--- files/rkhunter.orig 2014-03-12 21:54:55.000000000 +0100
++++ files/rkhunter  2016-09-16 21:49:18.053815000 +0200
+@@ -4838,6 +4838,32 @@
             fi
         fi
         ;;
@@ -106,7 +49,7 @@ diff -ur files_old/rkhunter files/rkhunter
     SOLARIS)
         #
         # For the Solaris package manager, see if we want
-@@ -6129,7 +6155,6 @@
+@@ -6343,7 +6369,6 @@
         NODATFILE=1
     fi
 
@@ -114,7 +57,7 @@ diff -ur files_old/rkhunter files/rkhunter
     #
     # Now loop through the pathnames looking for the files.
     #
-@@ -6374,6 +6399,26 @@
+@@ -6588,6 +6613,26 @@
                 PKGNAME=`echo "${RKHTMPVAR}" | tail ${TAIL_OPT}1 | sed -e 's/[0-9]nb[0-9][0-9]*$//; s/-[0-9.]*$//'`
             fi
             ;;
@@ -141,7 +84,7 @@ diff -ur files_old/rkhunter files/rkhunter
         SOLARIS)
             #
             # First see if the file is exempt or belongs to a package.
-@@ -6461,6 +6506,16 @@
+@@ -6675,6 +6720,16 @@
                         test -n "${SYSHASH}" && FILE_IS_PKGD=1
                     fi
                     ;;
@@ -158,7 +101,7 @@ diff -ur files_old/rkhunter files/rkhunter
                 SOLARIS)
                     #
                     # If we are to use the stored 16-bit checksum, then
-@@ -10580,6 +10635,34 @@
+@@ -10723,6 +10778,34 @@
                         fi
                     fi
                     ;;
@@ -193,7 +136,7 @@ diff -ur files_old/rkhunter files/rkhunter
                 SOLARIS)
                     #
                     # We only use the Solaris package manager
-@@ -17651,7 +17734,7 @@
+@@ -17782,7 +17865,7 @@
         killall ksyms kudzu last lastlog ldd less links locate logger login
         ls lsattr lsmod lsof lynx mail md5 md5sum mktemp mlocate modinfo
         modload modprobe modstat modunload more mount mv netstat newgrp
@@ -202,7 +145,7 @@ diff -ur files_old/rkhunter files/rkhunter
         pwd readlink rkhunter rmmod route rpm rsyslogd runcon runlevel sed sestatus sh
         sha1 sha1sum sha224 sha224sum sha256 sha256sum sha384 sha384sum sha512
         sha512sum size skdet slocate sockstat sort ssh sshd stat strace strings su sudo
-@@ -18140,7 +18223,8 @@
+@@ -18271,7 +18354,8 @@
     echo $ECHOOPT "   --ns, --nosummary                   Do not show the summary of check results"
     echo $ECHOOPT " --novl, --no-verbose-logging          No verbose logging"
     echo $ECHOOPT "         --pkgmgr {RPM | DPKG | BSD |  Use the specified package manager to obtain or"
@@ -212,7 +155,7 @@ diff -ur files_old/rkhunter files/rkhunter
     echo $ECHOOPT "         --propupd [file | directory | Update the entire file properties database,"
     echo $ECHOOPT "                    package]...        or just for the specified entries"
     echo $ECHOOPT "     -q, --quiet                       Quiet mode (no output at all)"
-@@ -18269,6 +18353,7 @@
+@@ -18398,6 +18482,7 @@
  PRELINK_CMD=""
  PRELINK_HASH=""
  PKGMGR_MD5_HASH=""
@@ -220,7 +163,7 @@ diff -ur files_old/rkhunter files/rkhunter
  MD5_CMD=""
  EPOCH_DATE_CMD=""
  PKGMGRNOVRFY=""
-@@ -19901,6 +19986,9 @@
+@@ -20010,6 +20095,9 @@
             BSD)
                 display --to LOG --type INFO FOUND_CMD 'pkg-info' "${PKG_CMD}"
                 ;;
@@ -230,7 +173,20 @@ diff -ur files_old/rkhunter files/rkhunter
             SOLARIS)
                 if [ $USE_SUNSUM -eq 1 ]; then
                     display --to LOG --type INFO HASH_PKGMGR_SUM
-@@ -19942,6 +20030,10 @@
+@@ -20051,6 +20139,10 @@
+                display --to LOG --type INFO FOUND_CMD 'pkg-info' "${PKG_CMD}"
+                display --to LOG --type INFO HASH_PKGMGR_MD5 "${PKGMGR_MD5_HASH}"
+                ;;
++           BSDNG)
++               display --to LOG --type INFO FOUND_CMD 'pkg' "${PKG_CMD}"
+                ;;
++           BSDNG)
++               display --to LOG --type INFO FOUND_CMD 'pkg' "${PKG_CMD}"
++               ;;
+            SOLARIS)
+                if [ $USE_SUNSUM -eq 1 ]; then
+                    display --to LOG --type INFO HASH_PKGMGR_SUM
+@@ -20051,6 +20139,10 @@
                 display --to LOG --type INFO FOUND_CMD 'pkg-info' "${PKG_CMD}"
                 display --to LOG --type INFO HASH_PKGMGR_MD5 "${PKGMGR_MD5_HASH}"
                 ;;
@@ -241,9 +197,8 @@ diff -ur files_old/rkhunter files/rkhunter
             SOLARIS)
                 if [ $USE_SUNSUM -eq 1 ]; then
                     display --to LOG --type INFO HASH_PKGMGR_SUM
-diff -ur files_old/rkhunter.8 files/rkhunter.8
---- files_old/rkhunter.8    2014-01-03 22:26:10.000000000 +0100
-+++ files/rkhunter.8    2015-02-01 14:08:06.000000000 +0100
+--- files/rkhunter.8.orig   2014-01-03 22:26:10.000000000 +0100
++++ files/rkhunter.8    2016-09-16 21:49:18.055818000 +0200
 @@ -305,7 +305,7 @@
  \fBrkhunter\fP. However, the log file will contain less information should any
  warnings occur. By default verbose logging is enabled.
@@ -253,9 +208,8 @@ diff -ur files_old/rkhunter.8 files/rkhunter.8
  This option is used during the file properties check or when the
  \fB\-\-propupd\fP command option is given. It tells \fBrkhunter\fP that the
  current file property values should be obtained from the relevant package manager.
-diff -ur files_old/rkhunter.conf files/rkhunter.conf
---- files_old/rkhunter.conf 2014-10-02 13:11:45.000000000 +0200
-+++ files/rkhunter.conf 2015-02-01 14:05:49.000000000 +0100
+--- files/rkhunter.conf.orig    2016-09-16 21:48:32.879367000 +0200
++++ files/rkhunter.conf 2016-09-16 21:49:18.058305000 +0200
 @@ -400,12 +400,14 @@
  # properties file ('rkhunter.dat'), and when running the file properties check.
  # For RedHat/RPM-based systems, 'RPM' can be used to get information from the
@@ -275,3 +229,13 @@ diff -ur files_old/rkhunter.conf files/rkhunter.conf
  #
  # The 'DPKG' and 'BSD' package managers only provide MD5 hash values.
  # The 'RPM' package manager additionally provides values for the inode,
+--- files/i18n/en.orig  2014-02-24 02:22:34.000000000 +0100
++++ files/i18n/en   2016-09-16 21:49:18.037352000 +0200
+@@ -108,6 +108,7 @@
+
+ HASH_PKGMGR:Using package manager '$1' for file property checks
+ HASH_PKGMGR_MD5:Using MD5 hash function command '$1' to assist package manager verification
++HASH_PKGMGR_SHA256:Using SHA256 hash function command '$1' to assist package manager verification
+ HASH_PKGMGR_SUM:Using the stored 16-bit checksum for package verification
+ HASH_PKGMGR_NOT_SPEC:No package manager specified: using hash function '$1'
+ HASH_PKGMGR_NOT_SPEC_PRELINKED:No package manager specified: using prelink command with '$1'
