@@ -1,5 +1,6 @@
 set nomodeline
 syntax on
+colorscheme evening
 set ruler
 set tabstop=4
 set backspace=indent,eol,start
