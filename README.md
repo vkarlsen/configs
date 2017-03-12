@@ -7,4 +7,4 @@ My configuration files, for easy deployment to new hosts, including:
 - zsh
 - vim
 
-And some custom patches that don't really belong anywhere.
+The custom ports patches have been moved to https://github.com/vkarlsen/customports
