@@ -5,7 +5,6 @@ My configuration files, for easy deployment to new hosts, including:
 
 - tmux
 - zsh
-- bash
 - vim
 
-And some custom patches for the FreeBSD ports tree.
+The custom ports patches have been moved to https://github.com/vkarlsen/customports
