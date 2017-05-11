@@ -68,6 +68,7 @@ lang/php56-extensions
 lang/ruby22
 mail/dovecot2
 mail/milter-greylist
+mail/opendkim
 mail/p5-Email-Abstract
 mail/p5-Email-Address
 mail/p5-Email-Date-Format
@@ -188,3 +189,4 @@ ports-mgmt/portlint
 security/py-onetime
 editors/bpatch
 sysutils/pslist
+security/py-gixy

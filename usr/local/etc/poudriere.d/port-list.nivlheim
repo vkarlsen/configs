@@ -41,6 +41,7 @@ databases/phppgadmin
 ports-mgmt/pkg
 ports-mgmt/portmaster
 ports-mgmt/portupgrade
+mail/opendkim
 mail/postfix
 mail/postfix-policyd-spf-perl
 mail/postfixadmin
@@ -76,3 +77,4 @@ sysutils/pcapfix
 converters/base64
 security/py-onetime
 sysutils/pslist
+security/py-gixy
