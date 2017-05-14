@@ -77,4 +77,8 @@ sysutils/pcapfix
 converters/base64
 security/py-onetime
 sysutils/pslist
+www/youtube_dl
 security/py-gixy
+editors/kakoune
+shells/mudsh
+devel/ctags

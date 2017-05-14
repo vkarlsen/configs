@@ -190,3 +190,6 @@ security/py-onetime
 editors/bpatch
 sysutils/pslist
 security/py-gixy
+editors/kakoune
+shells/mudsh
+devel/ctags
