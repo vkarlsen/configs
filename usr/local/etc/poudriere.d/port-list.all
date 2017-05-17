@@ -139,7 +139,7 @@ security/sshguard-ipfw
 shells/bash
 shells/zsh
 sysutils/acts
-sysutils/bsdadminscripts
+ports-mgmt/bsdadminscripts
 sysutils/htop
 sysutils/iocell
 sysutils/lsof
@@ -193,3 +193,4 @@ security/py-gixy
 editors/kakoune
 shells/mudsh
 devel/ctags
+devel/cvs
