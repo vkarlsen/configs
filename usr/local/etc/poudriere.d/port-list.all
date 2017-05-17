@@ -194,3 +194,4 @@ editors/kakoune
 shells/mudsh
 devel/ctags
 devel/cvs
+security/bro
