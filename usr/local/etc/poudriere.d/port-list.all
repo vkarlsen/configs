@@ -195,3 +195,5 @@ shells/mudsh
 devel/ctags
 devel/cvs
 security/bro
+print/freetype2
+sysutils/lspu

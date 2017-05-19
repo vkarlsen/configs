@@ -83,3 +83,5 @@ editors/kakoune
 shells/mudsh
 devel/ctags
 security/bro
+print/freetype2
+sysutils/lspu
