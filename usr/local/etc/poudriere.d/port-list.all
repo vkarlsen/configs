@@ -44,7 +44,6 @@ devel/rubygem-rdoc
 devel/subversion
 devel/xorg-macros
 dns/bind99
-editors/nano
 editors/vim-lite
 ftp/curl
 ftp/wget

@@ -25,7 +25,6 @@ net-mgmt/nagios-check_netsnmp
 net-mgmt/nagios-check_ports
 net-mgmt/nagios-check_postgres
 net-mgmt/nagios-check_smartmon
-editors/nano
 www/nginx
 www/php56-tidy
 net-mgmt/nrpe-ssl
