@@ -70,6 +70,7 @@ ftp/curl
 ftp/php71-curl
 ftp/wget
 games/bsdgames
+games/lolcat
 games/nethack36-nox11
 graphics/ImageMagick-nox11
 graphics/frei0r
@@ -145,7 +146,7 @@ net/php71-soap
 net/php71-sockets
 net/php71-xmlrpc
 net/rsync
-net/samba44
+net/samba45
 net/slurm
 ports-mgmt/bsdadminscripts
 ports-mgmt/dialog4ports
@@ -181,6 +182,7 @@ security/rkhunter
 security/sqlmap
 security/sshguard
 security/sshguard-ipfw
+security/sslscan
 shells/bash
 shells/mudsh
 shells/zsh
@@ -201,12 +203,15 @@ sysutils/php71-posix
 sysutils/pslist
 sysutils/pv
 sysutils/pwgen
-sysutils/py-iocage
+sysutils/py3-iocage
 sysutils/py-salt
 sysutils/screen
+sysutils/sysadm
+sysutils/sysadm-client
 sysutils/tarsnap
 sysutils/tarsnap-periodic
 sysutils/tmux
+sysutils/zfstools
 textproc/crunch
 textproc/expat2
 textproc/libxml2
