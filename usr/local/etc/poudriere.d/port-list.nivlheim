@@ -56,7 +56,7 @@ mail/roundcube
 net/rsync
 sysutils/mog
 sysutils/screen
-security/sshguard-ipfw
+security/sshguard
 sysutils/sysadm
 sysutils/sysadm-client
 sysutils/tarsnap

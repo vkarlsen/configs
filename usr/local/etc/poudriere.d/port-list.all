@@ -181,7 +181,6 @@ security/py-onetime
 security/rkhunter
 security/sqlmap
 security/sshguard
-security/sshguard-ipfw
 security/sslscan
 shells/bash
 shells/mudsh
@@ -249,3 +248,5 @@ www/w3m
 www/youtube_dl
 x11/dri3proto
 x11/presentproto
+audio/teamspeak3-server
+misc/toilet
