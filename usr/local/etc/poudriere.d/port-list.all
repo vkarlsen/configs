@@ -166,9 +166,9 @@ security/john
 security/metasploit
 security/oidentd
 security/openssh-portable
-security/openvas-cli
-security/openvas-manager
-security/openvas-scanner
+security/openvas8-cli
+security/openvas8-manager
+security/openvas8-scanner
 security/php71-filter
 security/php71-hash
 security/php71-mcrypt
