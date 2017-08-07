@@ -2,7 +2,9 @@ alias ll="ls -lah"
 alias rm="rm -i"
 alias cp="cp -i"
 alias l="ls -ail"
-alias vi="vim"
+if [[ ! -a /usr/local/bin/vim ]]; then
+	alias vi="vim"
+fi
 
 case `uname` in
         Darwin)
