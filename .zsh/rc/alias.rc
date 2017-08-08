@@ -2,7 +2,7 @@ alias ll="ls -lah"
 alias rm="rm -i"
 alias cp="cp -i"
 alias l="ls -ail"
-if [[ ! -a /usr/local/bin/vim ]]; then
+if [[ -a /usr/local/bin/vim ]]; then
 	alias vi="vim"
 fi
 
