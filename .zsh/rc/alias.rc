@@ -5,17 +5,20 @@ alias l="ls -ail"
 if [[ -a /usr/local/bin/vim ]]; then
 	alias vi="vim"
 fi
+if [[ -a /usr/local/bin/ssh ]]; then
+	alias ssh="/usr/local/bin/ssh"
+fi
 
 case `uname` in
-        Darwin)
-                alias ls='ls -FG'
-        ;;
-        FreeBSD)
-                alias ls='ls -FG'
-        ;;
-        Linux)
-                alias ls='ls -F --color=auto'
-        ;;
+	Darwin)
+		alias ls='ls -FG'
+	;;
+	FreeBSD)
+		alias ls='ls -FG'
+	;;
+	Linux)
+		alias ls='ls -F --color=auto'
+	;;
 esac
 
 # do a du -hs on each dir on current path
