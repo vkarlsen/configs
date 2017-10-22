@@ -4,7 +4,7 @@ alias rm="rm -i"
 alias cp="cp -i"
 alias l="ls -ail"
 if [[ -a /usr/local/bin/vim ]]; then
-	alias vi="vim"
+	alias vi="/usr/local/bin/vim"
 fi
 if [[ -a /usr/local/bin/ssh ]]; then
 	alias ssh="/usr/local/bin/ssh"
