@@ -1,3 +1,4 @@
+# $Id$
 fpath=($HOME/.zsh/functions $fpath)
 
 # colors

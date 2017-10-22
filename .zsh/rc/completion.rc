@@ -1,3 +1,4 @@
+# $Id$
 #!/usr/local/bin/zsh
 
 _force_rehash() {

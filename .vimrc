@@ -1,3 +1,4 @@
+" $Id$
 set nomodeline
 syntax on
 colorscheme evening

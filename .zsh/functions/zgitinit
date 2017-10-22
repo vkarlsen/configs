@@ -1,6 +1,5 @@
-##
-## Load with `autoload -U zgitinit; zgitinit'
-##
+# $Id$
+# Load with `autoload -U zgitinit; zgitinit'
 
 typeset -gA zgit_info
 zgit_info=()

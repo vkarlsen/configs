@@ -1,3 +1,4 @@
+# $Id$
 setopt CORRECT
 setopt ALWAYS_TO_END
 setopt NOTIFY
