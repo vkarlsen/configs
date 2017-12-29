@@ -4,5 +4,9 @@ setopt promptsubst
 autoload -U promptinit
 promptinit
 
-PROMPT="%n@%m %~%# "
+autoload -U colors
+colors
+
+#PROMPT="%n@%m %~%# "
+PROMPT="%(#.${red}.${blue})%n@%m %~%{%(#~$fg[red]~$fg[green])%}%#%{$fg[default]%} "
 RPROMPT="%l %*"
