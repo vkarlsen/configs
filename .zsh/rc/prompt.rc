@@ -8,5 +8,5 @@ autoload -U colors
 colors
 
 #PROMPT="%n@%m %~%# "
-PROMPT="%(#.${red}.${blue})%n@%m %~%{%(#~$fg[red]~$fg[green])%}%#%{$fg[default]%} "
+PROMPT="%(#.${red}.${green})%n@%m %~%{%(#~$fg[red]~$fg[green])%}%#%{$fg[default]%} "
 RPROMPT="%l %*"
