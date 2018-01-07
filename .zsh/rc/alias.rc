@@ -1,8 +1,9 @@
 # $Id$
 alias ll="ls -lah"
 alias rm="rm -i"
-alias cp="cp -i"
+alias cp="cp -ip"
 alias l="ls -ail"
+alias mkdir="mkdir -p"
 if [[ -a /usr/local/bin/vim ]]; then
 	alias vi="/usr/local/bin/vim"
 fi
