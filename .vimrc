@@ -1,7 +1,9 @@
 " $Id$
 set nomodeline
 syntax on
-colorscheme itsasoa
+"colorscheme itsasoa
+"colorscheme DarkDefault
+colorscheme DimBlue
 set ruler
 set tabstop=4
 set backspace=indent,eol,start
