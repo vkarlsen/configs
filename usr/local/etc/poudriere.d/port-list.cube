@@ -97,3 +97,4 @@ www/squid
 www/youtube_dl
 x11/dri3proto
 x11/presentproto
+sysutils/ncdu

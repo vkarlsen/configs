@@ -26,7 +26,7 @@ editors/nano
 editors/vim-lite
 ftp/curl
 ftp/wget
-graphics/ImageMagick-nox11
+graphics/ImageMagick6-nox11
 graphics/graphviz
 graphics/p5-Chart
 graphics/p5-GD
@@ -120,3 +120,5 @@ mail/spamtools
 sysutils/pgbackup
 textproc/crunch
 sysutils/pcapfix
+mail/alpine
+games/sl

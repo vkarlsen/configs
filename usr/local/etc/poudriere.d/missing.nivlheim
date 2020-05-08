@@ -1,0 +1,8 @@
+databases/phppgadmin
+net-mgmt/iftop
+net/arping
+net/avahi-autoipd
+ports-mgmt/dialog4ports
+security/oidentd
+sysutils/acts
+sysutils/pwgen

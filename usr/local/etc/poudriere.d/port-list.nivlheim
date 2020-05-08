@@ -26,7 +26,7 @@ net-mgmt/nagios-check_ports
 net-mgmt/nagios-check_postgres
 net-mgmt/nagios-check_smartmon
 www/nginx
-net-mgmt/nrpe-ssl
+net-mgmt/nrpe3
 security/oidentd
 security/openssh-portable
 lang/perl5.24
@@ -41,6 +41,7 @@ mail/postfix
 mail/postfix-policyd-spf-perl
 mail/postfixadmin
 databases/postgresql95-server
+databases/postgresql95-contrib
 sysutils/pwgen
 devel/py-babel
 devel/py-Jinja2
@@ -57,7 +58,7 @@ security/sshguard
 sysutils/tarsnap
 sysutils/tarsnap-periodic
 sysutils/tmux
-editors/vim-lite
+editors/vim-console
 www/w3m
 ftp/wget
 shells/zsh
@@ -149,10 +150,12 @@ textproc/php71-simplexml
 textproc/php71-xml
 textproc/php71-xmlreader
 textproc/php71-xmlwriter
-www/mod_php71
 www/php71-opcache
 www/php71-session
 www/php71-tidy
 textproc/diff-so-fancy
 sysutils/dtpstree
 net/nncp
+security/snuffleupagus
+www/nextcloud
+sysutils/goaccess
