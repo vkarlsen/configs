@@ -1,0 +1,9 @@
+#!/bin/sh
+. /usr/local/share/portshaker/portshaker.subr
+if [ "$1" != '--' ]; then
+	err 1 "Extra arguments"
+fi
+shift
+method="svn"
+svn_checkout_path="https://svn.freebsd.org/ports/head"
+run_portshaker_command $*
