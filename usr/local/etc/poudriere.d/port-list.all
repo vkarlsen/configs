@@ -113,7 +113,7 @@ lang/php73
 lang/php73-extensions
 mail/dovecot
 mail/milter-greylist
-mail/mutt
+mail/neomutt
 mail/opendkim
 mail/p5-Email-Abstract
 mail/p5-Email-Address
